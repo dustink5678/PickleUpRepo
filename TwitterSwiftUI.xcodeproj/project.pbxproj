@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D4649DE42C62BD0F00794B3A /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4649DE32C62BD0F00794B3A /* AuthViewModel.swift */; };
+		D4649DE62C62C3F700794B3A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D4649DE52C62C3F700794B3A /* GoogleService-Info.plist */; };
 		D4BDA8872C62A5A700988214 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = D4BDA8862C62A5A700988214 /* FirebaseAuth */; };
 		D4BDA8892C62A5A700988214 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = D4BDA8882C62A5A700988214 /* FirebaseFirestore */; };
 		D4BDA88B2C62A5A700988214 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = D4BDA88A2C62A5A700988214 /* FirebaseStorage */; };
@@ -38,6 +40,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D4649DE32C62BD0F00794B3A /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		D4649DE52C62C3F700794B3A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D5D7FDDC2C51892A004282F7 /* TwitterSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5D7FDDF2C51892A004282F7 /* TwitterSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterSwiftUIApp.swift; sourceTree = "<group>"; };
 		D5D7FDE12C51892A004282F7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -106,6 +110,7 @@
 				D5D7FDDF2C51892A004282F7 /* TwitterSwiftUIApp.swift */,
 				D5D7FDE12C51892A004282F7 /* ContentView.swift */,
 				D5D7FDE32C51892B004282F7 /* Assets.xcassets */,
+				D4649DE52C62C3F700794B3A /* GoogleService-Info.plist */,
 				D5D7FDE52C51892B004282F7 /* Preview Content */,
 			);
 			path = TwitterSwiftUI;
@@ -356,6 +361,7 @@
 		D5D7FE302C56AE71004282F7 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				D4649DE32C62BD0F00794B3A /* AuthViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -428,6 +434,7 @@
 			files = (
 				D5D7FDE72C51892B004282F7 /* Preview Assets.xcassets in Resources */,
 				D5D7FDE42C51892B004282F7 /* Assets.xcassets in Resources */,
+				D4649DE62C62C3F700794B3A /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,6 +465,7 @@
 				D5D7FE252C52B10A004282F7 /* SideMenuOptionRowView.swift in Sources */,
 				D5D7FE072C519CDF004282F7 /* NotificationsView.swift in Sources */,
 				D5D7FE322C56AE89004282F7 /* LoginView.swift in Sources */,
+				D4649DE42C62BD0F00794B3A /* AuthViewModel.swift in Sources */,
 				D5D7FE0D2C519FB0004282F7 /* MainTabView.swift in Sources */,
 				D5D7FE232C529DA9004282F7 /* UserStatsView.swift in Sources */,
 				D5D7FE342C56AEE9004282F7 /* RegistrationView.swift in Sources */,
