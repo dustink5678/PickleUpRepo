@@ -5,12 +5,16 @@
 //  Created by Dustin King on 7/24/24.
 //
 
-// THIS IS A TEST FOR PUSHING FILES
-
 import SwiftUI
+import Firebase
 
 @main
 struct TwitterSwiftUIApp: App {
+    
+    init() {
+        FirebaseApp.configure()
+    }
+    
     var body: some Scene {
         WindowGroup {
             NavigationView{
