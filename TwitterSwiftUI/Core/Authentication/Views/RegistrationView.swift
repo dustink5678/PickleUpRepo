@@ -22,7 +22,7 @@ struct RegistrationView: View {
                 CustomInputFields(imageName:"envelope", placeholderText: "Email", text: $email)
                 CustomInputFields(imageName:"person.text.rectangle", placeholderText: "Username", text: $username)
                 CustomInputFields(imageName:"person", placeholderText: "Full Name", text: $fullname)
-                CustomInputFields(imageName:"lock", placeholderText: "Password", text: $password)
+                CustomInputFields(imageName:"lock", placeholderText: "Password", isSecureField: true, text: $password)
             }
             .padding(32)
             
