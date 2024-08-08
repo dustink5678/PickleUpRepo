@@ -23,9 +23,14 @@ struct ContentView: View {
     }
 }
 
-#Preview {
-    NavigationView{
-        ContentView()
+// Allows a view with the Authentication View Model
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        let viewModel = AuthViewModel()
+        NavigationView {
+            ContentView()
+                .environmentObject(viewModel)
+        }
     }
 }
 
