@@ -13,6 +13,7 @@ struct SideMenuView: View {
         VStack(alignment: .leading, spacing: 32) {
             VStack(alignment: .leading) {
                 Circle()
+                    .fill(Gradient(colors: [.yellow, .black]))
                     .frame(width:48, height: 48)
                 VStack (alignment: .leading, spacing: 4){
                     Text("Bruce Wayne")

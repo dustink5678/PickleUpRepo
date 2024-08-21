@@ -10,6 +10,7 @@ import SwiftUI
 struct ContentView: View {
     @State private var showMenu = false
     @EnvironmentObject var viewModel : AuthViewModel
+    @Environment(\.colorScheme) var colorScheme
     var body: some View {
         Group {
             // no user logged in
@@ -55,10 +56,10 @@ extension ContentView {
             
             SideMenuView()
                 .frame(width: 300)
-                .offset(x: showMenu ? 0: -300, y: 0)
-                .background(showMenu ? Color.white : Color.clear)
+                .offset(x: showMenu ? 0 : -300, y: 0)
+                .background(showMenu ? menuBackgroundColor : Color.clear)
         }
-        .navigationTitle("Home")
+        .navigationTitle("PickleUp")
         .navigationBarTitleDisplayMode(.inline)
         .toolbar{
             ToolbarItem(placement: .navigationBarLeading){
@@ -76,5 +77,8 @@ extension ContentView {
         .onAppear{
             showMenu = false
         }
+    }
+    var menuBackgroundColor: Color {
+        colorScheme == .dark ? Color.black : Color.white
     }
 }

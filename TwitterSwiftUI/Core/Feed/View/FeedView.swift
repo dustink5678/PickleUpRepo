@@ -27,9 +27,10 @@ struct FeedView: View {
                     .resizable()
                     .renderingMode(/*@START_MENU_TOKEN@*/.template/*@END_MENU_TOKEN@*/)
                     .frame(width: 45, height: 35)
-                    .padding()
-                    .padding(.leading,6)
-                    .padding(.top,5)
+                    .padding(17)
+                    .padding(.trailing,-6)
+                    .padding(.bottom,-5)
+                    
                     
                  
             }
@@ -42,7 +43,8 @@ struct FeedView: View {
                     )
             .foregroundColor(.white)
             .clipShape(Circle())
-            .padding(.horizontal, 20)
+            .padding(.horizontal, 10)
+            .padding(.bottom,10)
             .fullScreenCover(isPresented: $showNewTweetView) {
                 NewTweetView()
             }
