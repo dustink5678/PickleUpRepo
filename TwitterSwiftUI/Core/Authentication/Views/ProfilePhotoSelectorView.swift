@@ -25,7 +25,7 @@ struct ProfilePhotoSelectorView: View {
                             endPoint: .trailing
                         )
                     )
-                    .frame(width:180, height:180)
+                    .frame(width:180, height:180) 
 
             }
             Text("Select Here")

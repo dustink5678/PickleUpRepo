@@ -13,27 +13,31 @@ struct MainTabView: View {
     
     var body: some View {
         ZStack {
-            TabView(selection: $selectedIndex) {
-                FeedView()
-                    .tag(0)
-                
-                ExploreView()
-                    .tag(1)
-                
-                NotificationsView()
-                    .tag(2)
-                
-                MessagesView()
-                    .tag(3)
-                
-                ProfileView()
-                    .tag(4)
-            }
-            .onChange(of: selectedIndex) { oldValue, newValue in
-                bounceStates[newValue] = true
-                DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
-                    bounceStates[newValue] = false
+            if #available(iOS 17.0, *) {
+                TabView(selection: $selectedIndex) {
+                    FeedView()
+                        .tag(0)
+                    
+                    ExploreView()
+                        .tag(1)
+                    
+                    NotificationsView()
+                        .tag(2)
+                    
+                    MessagesView()
+                        .tag(3)
+                    
+                    ProfileView()
+                        .tag(4)
                 }
+                .onChange(of: selectedIndex) { oldValue, newValue in
+                    bounceStates[newValue] = true
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+                        bounceStates[newValue] = false
+                    }
+                }
+            } else {
+                // Fallback on earlier versions
             }
             
             VStack {
